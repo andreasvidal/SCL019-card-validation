@@ -17,7 +17,9 @@ btnForm.addEventListener('click', function(e) {
         return document.getElementById("print").innerHTML = "Tu tarjeta N° " + maskified + " es válida";
     }
 
+
 })
+
 
 // inputName solo letras, inputCcv y inputNumber  solo numeros
 let inputNumber = document.getElementById('inputNumber');
@@ -26,10 +28,10 @@ let inputCcv = document.getElementById('inputCcv');
 
 const onlyNum = /[^0-9]/g;
 const onlypLet = /[^a-zA-ZÑñáéíóúÁÉÍÓÚ\s]*$/g;
-const str = (/\d(?=\d{4})/g, "🐾");
+
 
 inputNumber.addEventListener('input', function() {
-    inputNumber.value = inputNumber.value.replace(onlyNum, str, '');
+    inputNumber.value = inputNumber.value.replace(onlyNum, '');
 });
 
 inputName.addEventListener('input', function() {
@@ -39,6 +41,9 @@ inputName.addEventListener('input', function() {
 inputCcv.addEventListener('input', function() {
     inputCcv.value = inputCcv.value.replace(onlyNum, '');
 });
+
+
+
 
 // mes y años
 for (let i = 1; i <= 12; i++) {
