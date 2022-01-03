@@ -25,11 +25,11 @@ let inputName = document.getElementById('inputNameUser');
 let inputCcv = document.getElementById('inputCcv');
 
 const onlyNum = /[^0-9]/g;
-//const nonBlank = /[\s]/g;
 const onlypLet = /[^a-zA-ZÑñáéíóúÁÉÍÓÚ\s]*$/g;
+const str = (/\d(?=\d{4})/g, "🐾");
 
 inputNumber.addEventListener('input', function() {
-    inputNumber.value = inputNumber.value.replace(onlyNum, '');
+    inputNumber.value = inputNumber.value.replace(onlyNum, str, '');
 });
 
 inputName.addEventListener('input', function() {

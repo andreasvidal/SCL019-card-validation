@@ -1,7 +1,7 @@
 function transNumber(numberValid) {
     if (numberValid > 9) {
         let separateNumberValid = numberValid.toString().split('');
-        //console.log(separateNumberV);
+
         let newNumberValid = separateNumberValid.reduce(function(a, b) {
             let num1 = parseInt(a);
             let num2 = parseInt(b);
