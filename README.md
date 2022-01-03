@@ -2,9 +2,9 @@
 Aplicación Web para ingresar donaciones a findaciones encargadas del rescate y reintegración de animales domesticos.
 
 <strong>Imagen final del proyecto.</strong>
-<img src="./assets/img_readme/Slide1.jpg"/>
-<img src="./assets/img_readme/Slide2.jpg"/>
-<img src="./assets/img_readme/Slide3.jpg"/>
+![](<img src="./assets/img_readme/Slide1.jpg"/>)
+![](<img src="./assets/img_readme/Slide2.jpg"/>)
+![](<img src="./assets/img_readme/Slide3.jpg"/>)
 
 ### Valida datos de tarjetas de crédito
 La función debe recibir un elemento DOM que contenga <input>s con los siguientes nombres (atributo name):
