@@ -1,7 +1,7 @@
-<title>royecto de Card Validation<title>
+<title>Proyecto de Card Validation</title>
 Aplicación Web para ingresar donaciones a findaciones encargadas del rescate y reintegración de animales domesticos.
 
-Imagen final del proyecto.
+<strong>Imagen final del proyecto.</strong>
 <img src="./assets/img_readme/Slide1.jpg"/>
 <img src="./assets/img_readme/Slide2.jpg"/>
 <img src="./assets/img_readme/Slide3.jpg"/>
