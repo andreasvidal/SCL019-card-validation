@@ -16,7 +16,8 @@ La función debe recibir un elemento DOM que contenga <input>s con los siguiente
 
 ## Ejemplo código
 
- ""  <form id="formValidation" class="form-validation">
+ '''
+    <form id="formValidation" class="form-validation">
          <div class="data-card" id="dataForm">
             <label for="inputNumber">Número Tarjeta</label>
             <input type="text" id="inputNumber" name="number" maxlength="16" autocomplete="off" pattern="[0-9]+" placeholder="XXXX XXXX XXXX XXXX" required/>
