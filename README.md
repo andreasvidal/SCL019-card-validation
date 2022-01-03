@@ -17,6 +17,7 @@ La función debe recibir un elemento DOM que contenga <input>s con los siguiente
 ## Ejemplo código
 
  '''
+
     <form id="formValidation" class="form-validation">
          <div class="data-card" id="dataForm">
             <label for="inputNumber">Número Tarjeta</label>
@@ -37,7 +38,6 @@ La función debe recibir un elemento DOM que contenga <input>s con los siguiente
                         <select name="monthSelect" id="monthSelect" required>
               <option disabled selected>Mes</option>
             </select>
-
                     </div>
                     <div class="data-card-select">
                         <select name="yearSelect" id="yearSelect" required>
