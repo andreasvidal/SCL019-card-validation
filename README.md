@@ -9,14 +9,14 @@ Aplicación Web para ingresar donaciones a findaciones encargadas del rescate y 
 ### Valida datos de tarjetas de crédito
 La función debe recibir un elemento DOM que contenga <input>s con los siguientes nombres (atributo name):
 
-- number (Card Number): El número de la tarjeta de crédito
-- monthSelect/yearSelect (Expiry Date): Fecha de expiración
-- inputCcv (Card Verification Value): Código de validación de 3 dígitos
-- nameUser: Nombre completo como aparece en la tarjeta
+- **number (Card Number):** El número de la tarjeta de crédito
+- **monthSelect/yearSelect (Expiry Date):** Fecha de expiración
+- **inputCcv (Card Verification Value):** Código de validación de 3 dígitos
+- **nameUser:** Nombre completo como aparece en la tarjeta
 
 ## Ejemplo código
 ### Fragmento de códogo Formulario
- '''
+
 
     <form id="formValidation" class="form-validation">
          <div class="data-card" id="dataForm">
@@ -52,7 +52,7 @@ La función debe recibir un elemento DOM que contenga <input>s con los siguiente
             </div>
         </div>
         <button type="submit" value="sendForm" class="btn-send" id="sendForm">Enviar</button>
-'''
+
 
 
 # Feedback recibido:
