@@ -15,7 +15,7 @@ La función debe recibir un elemento DOM que contenga <input>s con los siguiente
 - nameUser: Nombre completo como aparece en la tarjeta
 
 ## Ejemplo código
-
+### Fragmento de códogo Formulario
  '''
 
     <form id="formValidation" class="form-validation">
