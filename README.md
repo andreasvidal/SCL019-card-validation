@@ -14,9 +14,9 @@ La función debe recibir un elemento DOM que contenga <input>s con los siguiente
 - inputCcv (Card Verification Value): Código de validación de 3 dígitos
 - nameUser: Nombre completo como aparece en la tarjeta
 
-<h2>Ejemplo</h2>
+<h2>Ejemplo código</h2>
 
-<form action="" id="formValidation" class="form-validation">
+<form id="formValidation" class="form-validation">
         <div class="data-card" id="dataForm">
             <label for="inputNumber">Número Tarjeta</label>
             <input type="text" id="inputNumber" name="number" maxlength="16" autocomplete="off" pattern="[0-9]+" placeholder="XXXX XXXX XXXX XXXX" required/>
@@ -51,5 +51,6 @@ La función debe recibir un elemento DOM que contenga <input>s con los siguiente
             </div>
         </div>
         <button type="submit" value="sendForm" class="btn-send" id="sendForm">Enviar</button>
+
 
 Feedback recibido:
