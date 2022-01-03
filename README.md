@@ -1,4 +1,4 @@
-<title>Proyecto de Card Validation</title>
+<h1>Proyecto de Card Validation</h1>
 Aplicación Web para ingresar donaciones a findaciones encargadas del rescate y reintegración de animales domesticos.
 
 <strong>Imagen final del proyecto.</strong>
@@ -14,7 +14,7 @@ monthSelect/yearSelect (Expiry Date): Fecha de expiración
 inputCcv (Card Verification Value): Código de validación de 3 dígitos
 nameUser: Nombre completo como aparece en la tarjeta
 
-<h1>Ejemplo</h1>
+<h2>Ejemplo</h2>
 
 <form action="" id="formValidation" class="form-validation">
         <div class="data-card" id="dataForm">
