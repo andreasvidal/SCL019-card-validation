@@ -16,7 +16,7 @@ La función debe recibir un elemento DOM que contenga <input>s con los siguiente
 
 ## Ejemplo código
 
-   <form id="formValidation" class="form-validation">
+ ""  <form id="formValidation" class="form-validation">
          <div class="data-card" id="dataForm">
             <label for="inputNumber">Número Tarjeta</label>
             <input type="text" id="inputNumber" name="number" maxlength="16" autocomplete="off" pattern="[0-9]+" placeholder="XXXX XXXX XXXX XXXX" required/>
@@ -50,7 +50,7 @@ La función debe recibir un elemento DOM que contenga <input>s con los siguiente
                 <input type="text" id="inputCcv" name="inputCcv" maxlength="3" required>
             </div>
         </div>
-        <button type="submit" value="sendForm" class="btn-send" id="sendForm">Enviar</button>
+        <button type="submit" value="sendForm" class="btn-send" id="sendForm">Enviar</button> ""
 
 
 Feedback recibido:
