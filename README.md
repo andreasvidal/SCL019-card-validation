@@ -1,4 +1,4 @@
-<h1>Proyecto de Card Validation</h1>
+#Proyecto de Card Validation
 Aplicación Web para ingresar donaciones a findaciones encargadas del rescate y reintegración de animales domesticos.
 
 <strong>Imagen final del proyecto.</strong>
@@ -6,7 +6,7 @@ Aplicación Web para ingresar donaciones a findaciones encargadas del rescate y 
 <img src="./assets/img_readme/Slide2.jpg"/>
 <img src="./assets/img_readme/Slide3.jpg"/>
 
-Valida datos de tarjetas de crédito
+###Valida datos de tarjetas de crédito
 La función debe recibir un elemento DOM que contenga <input>s con los siguientes nombres (atributo name):
 
 - number (Card Number): El número de la tarjeta de crédito
@@ -14,9 +14,9 @@ La función debe recibir un elemento DOM que contenga <input>s con los siguiente
 - inputCcv (Card Verification Value): Código de validación de 3 dígitos
 - nameUser: Nombre completo como aparece en la tarjeta
 
-<h2>Ejemplo código</h2>
+##Ejemplo código
 
-<form id="formValidation" class="form-validation">
+ <form id="formValidation" class="form-validation">
         <div class="data-card" id="dataForm">
             <label for="inputNumber">Número Tarjeta</label>
             <input type="text" id="inputNumber" name="number" maxlength="16" autocomplete="off" pattern="[0-9]+" placeholder="XXXX XXXX XXXX XXXX" required/>
