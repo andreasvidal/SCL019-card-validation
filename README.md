@@ -50,7 +50,7 @@ La función debe recibir un elemento DOM que contenga <input>s con los siguiente
                 <input type="text" id="inputCcv" name="inputCcv" maxlength="3" required>
             </div>
         </div>
-        <button type="submit" value="sendForm" class="btn-send" id="sendForm">Enviar</button> ""
+        <button type="submit" value="sendForm" class="btn-send" id="sendForm">Enviar</button> 
 
 
-Feedback recibido:
+# Feedback recibido:
