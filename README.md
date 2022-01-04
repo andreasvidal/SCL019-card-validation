@@ -1,23 +1,25 @@
-<title>Proyecto de Card Validation</title>
+# Proyecto de Card Validation
 Aplicación Web para ingresar donaciones a findaciones encargadas del rescate y reintegración de animales domesticos.
 
-Imagen final del proyecto.
-<img src="./assets/img_readme/Slide1.jpg"/>
-<img src="./assets/img_readme/Slide2.jpg"/>
-<img src="./assets/img_readme/Slide3.jpg"/>
+ ### Imagen final del proyecto.
+![img principal](https://github.com/andreasvidal/SCL019-card-validation/blob/main/src/assets/img_readme/Slide1.jpg)
+![img principal](https://github.com/andreasvidal/SCL019-card-validation/blob/main/src/assets/img_readme/Slide2.jpg)
+![img principal](https://github.com/andreasvidal/SCL019-card-validation/blob/main/src/assets/img_readme/Slide3.jpg)
 
-<h2>Valida datos de tarjetas de crédito</h2>
+### Valida datos de tarjetas de crédito
 La función debe recibir un elemento DOM que contenga <input>s con los siguientes nombres (atributo name):
 
-number (Card Number): El número de la tarjeta de crédito
-monthSelect/yearSelect (Expiry Date): Fecha de expiración
-inputCcv (Card Verification Value): Código de validación de 3 dígitos
-nameUser: Nombre completo como aparece en la tarjeta
+- **number (Card Number):** El número de la tarjeta de crédito
+- **monthSelect/yearSelect (Expiry Date):** Fecha de expiración
+- **inputCcv (Card Verification Value):** Código de validación de 3 dígitos
+- **nameUser:** Nombre completo como aparece en la tarjeta
 
-<h1>Ejemplo</h1>
+## Ejemplo código
+### Fragmento de códogo Formulario
 
-<form action="" id="formValidation" class="form-validation">
-        <div class="data-card" id="dataForm">
+
+    <form id="formValidation" class="form-validation">
+         <div class="data-card" id="dataForm">
             <label for="inputNumber">Número Tarjeta</label>
             <input type="text" id="inputNumber" name="number" maxlength="16" autocomplete="off" pattern="[0-9]+" placeholder="XXXX XXXX XXXX XXXX" required/>
             <h5 id="print"> </h5>
@@ -36,7 +38,6 @@ nameUser: Nombre completo como aparece en la tarjeta
                         <select name="monthSelect" id="monthSelect" required>
               <option disabled selected>Mes</option>
             </select>
-
                     </div>
                     <div class="data-card-select">
                         <select name="yearSelect" id="yearSelect" required>
@@ -52,4 +53,6 @@ nameUser: Nombre completo como aparece en la tarjeta
         </div>
         <button type="submit" value="sendForm" class="btn-send" id="sendForm">Enviar</button>
 
-Feedback recibido:
+
+
+# Feedback recibido:
