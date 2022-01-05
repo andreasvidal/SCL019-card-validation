@@ -1,10 +1,10 @@
-import validator from './validator.js';
+import validator from '../../src/js/validator.js';
 
 /* Llamando al DOM*/
 
 const btnForm = document.getElementById("sendForm");
 const form = document.getElementById("#formValidation");
-const monthValid = document.getElementById("#monthSelect");
+
 
 
 btnForm.addEventListener('click', function(e) {
