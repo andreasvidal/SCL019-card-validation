@@ -51,3 +51,6 @@ La función debe recibir un elemento DOM que contenga <input>s con los siguiente
 
 
 # Feedback recibido:
+- Agrandar el boton para ingresar al formulario
+- agregar boton para volver
+- arreglar archivo css (style)
