@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', 'sans-serif';
+    background-image: url(../assets/img/fondopatas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*estilos formulario validacion*/
+
+.form-validation {
+    color: beige;
+    width: 100%;
+    max-width: 700px;
+    margin-left: 300px;
+    border-radius: 10px;
+    position: relative;
+    top: 80px;
+    z-index: 1;
+}
+
+.bg-blur {
+    backdrop-filter: blur(1rem);
+    width: 100%;
+    padding: 45px;
+}
+
+.form-validation label {
+    display: block;
+    color: rgb(15, 15, 15);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.form-validation input,
+.form-validation select,
+.btn-send {
+    border: 2px solid rgba(4, 63, 63, 0.753);
+    font-size: 18px;
+    height: 50px;
+    width: 100%;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.form-validation input:hover,
+.form-validation select:hover {
+    border: 2px solid rgb(23, 24, 24);
+}
+
+.form-validation input:focus,
+.form-validation select:focus {
+    outline: rgb(173, 182, 182);
+    box-shadow: 0 8px 8px 0 rgba(32, 38, 46, 0.3);
+}
+
+.form-validation input {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.form-validation .flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-validation .expider-date {
+    width: 100%;
+}
+
+.form-validation .ccv {
+    min-width: 10px;
+}
+
+.form-validation .data-card-select {
+    width: 100%;
+    margin-right: 15px;
+    position: relative;
+}
+
+.form-validation select {
+    -webkit-appearance: none;
+}
+
+
+/*backgrond btn enviar*/
+
+.btn-send {
+    background: rgba(4, 63, 63, 0.753);
+    ;
+}
+
+.btn-send:hover {
+    background-color: rgba(94, 126, 136, 0.651);
+    cursor: pointer;
+}
+
+#print {
+    color: rgb(38, 41, 41);
+    font-size: 16px;
+}
+
+
+/*footer*/
+
+.terms {
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+footer,
+.container__footer {
+    width: 100%;
+    margin-top: 10%;
+    background-size: cover;
+    background-image: linear-gradient(135deg, #1650adad 0%, #c3cfe2 100%);
+    box-shadow: 0 10px 10px 0 rgba(90, 116, 148, 0.3);
+    color: rgba(2, 3, 39, 0.8);
+}
+
+.box__footer {
+    padding: 20px;
+    height: 10px;
+}
+
+.fab {
+    padding-right: 40px;
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+}
+
+.box__copyright {
+    padding-top: 5rem;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+.footer-txt {
+    padding: 0.5rem;
+}
+
+.img-footer {
+    height: 3rem;
+    width: 3rem;
+}

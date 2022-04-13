@@ -54,3 +54,4 @@ La función debe recibir un elemento DOM que contenga <input>s con los siguiente
 - Agrandar el boton para ingresar al formulario
 - agregar boton para volver
 - arreglar archivo css (style)
+

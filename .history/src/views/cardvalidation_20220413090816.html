@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/formstyle.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Formulario</title>
+</head>
+
+<!--contenido principal formulario-->
+
+<body>
+    <div class="subtitle">
+        <p class="subtitle">DONA AQUÍ 🐾 !</p>
+
+    </div>
+
+    <form id="formValidation" class="form-validation">
+        <div class="data-card" id="dataForm">
+            <label for="inputNumber">Número Tarjeta</label>
+            <input type="text" id="inputNumber" name="number" maxlength="16" autocomplete="off" pattern="[0-9]+" placeholder="XXXX XXXX XXXX XXXX" required/>
+            <h5 id="print"> </h5>
+        </div>
+        <div class="data-card">
+            <label for="inputNameUser">Nombre </label>
+            <input type="text" id="inputNameUser" name="nameUser" placeholder="Escriba su nombre" required/>
+            <h5 id="print"> </h5>
+        </div>
+        <!--datos expiración tarjeta-->
+        <div class="flexbox">
+            <div class="data-card expider-date">
+                <label for="monthSelect">Expiración</label>
+                <div class="flexbox">
+                    <div class="data-card-select">
+                        <select name="monthSelect" id="monthSelect" required>
+              <option disabled selected>Mes</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+
+            </select>
+
+                    </div>
+                    <div class="data-card-select">
+                        <select name="yearSelect" id="yearSelect" required>
+            <option disabled selected>Año</option>
+                <option value="2">2014</option>
+                <option value="5">2015</option>
+                <option value="6">2016</option>
+                <option value="7">2017</option>
+                <option value="8">2018</option>
+                <option value="9">2019</option>
+                <option value="10">2020</option>
+                <option value="11">2021</option>
+                <option value="12">2022</option>
+          </select>
+                    </div>
+                </div>
+            </div>
+            <div class="data-card ccv">
+                <label for="inputCcv">CVV</label>
+                <input type="text" id="inputCcv" name="inputCcv" maxlength="3" required>
+            </div>
+        </div>
+        <button type="submit" value="sendForm" class="btn-send" id="sendForm">Enviar</button>
+
+
+    </form>
+    <footer>
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="terms">
+                    <p>Con cada aporte eres parte de una gran obra encargada de rescatar, reinsertar y proteger una vida 🐾
+                    </p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"> <i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+            </div>
+        </div>
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2021 <b>Refuge Pet</b></p>
+        </div>
+    </footer>
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--materialize -->
+    <!--JS-->
+    <script src="../js/index.js" type="module"></script>
+
+</body>
+
+</html>
