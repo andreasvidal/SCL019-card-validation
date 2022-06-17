@@ -1,159 +1,139 @@
-     * {
-         padding: 0;
-         margin: 0;
-         box-sizing: border-box;
-     }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-     body {
-         font-family: 'Lato', 'sans-serif';
-         background-image: url(../assets/img/fondopatas.jpg);
-         font-family: Georgia, 'Times New Roman', Times, serif;
-     }
-     /*estilo titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+body,
+html {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-image: url(../assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
 
-     .title-h1 {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         color: rgba(2, 3, 39);
-         font-size: 8vw;
-         background-repeat: no-repeat;
-         background-size: contain;
-         background-position: 15rem;
-         margin-top: -9rem;
-         z-index: 3;
-         backdrop-filter: blur(0.4rem);
-     }
+:root {
+    --font-color: #3a3939;
+    --color-border: rgb(15, 75, 7);
+    --background-color: #cccce959;
+    --btn-color: #41419e;
+}
 
-     .img-h1 {
-         z-index: 3;
-         height: 5rem;
-         width: 5rem;
-         margin: 0 0 -7rem 15rem;
-     }
+p {
+    color: #101016;
+    font-weight: 400;
+}
 
-     .subtitle {
-         text-align: center;
-         padding: 20px;
-         color: rgb(74, 80, 80);
-         font-size: 3vw;
-         -webkit-text-fill-color: transparent;
-         -webkit-text-stroke: 3px rgba(2, 3, 39, 0.8);
-         background-image: linear-gradient(135deg, #1650ad65 0%, #c3cfe269 100%);
-     }
-     /*IMG BANNER*/
+h1 {
+    font-size: 5vw;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-right: 5rem;
+    text-shadow: 2px 2px 0 #2D2C70, 4px 4px 0 #9c9c9c;
+}
 
-     .container-banner {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         width: 100%;
-     }
+.container,
+.form-validation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-     .container-banner>img {
-         width: 100%;
-         height: 30rem;
-     }
-     /*contenedor tarjeta*/
+.form-validation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 5rem;
+    padding: 2.5rem 1rem;
+    background: #cccce986;
+    -webkit-box-shadow: 5px 5px 15px 5px #2D2C70;
+    box-shadow: 5px 5px 15px 5px #2D2C70;
+}
 
-     .container {
-         width: 90%;
-         max-width: 1000px;
-         padding: 20px 60px;
-         margin: auto;
-         display: flex;
-         /* deja los elementos en forma de columna*/
-         flex-direction: column;
-         /*align-items no sirve para centrar de forma vertical (se utiliza justify), se utiliza al cambiar la dirección con flex-direction*/
-         align-items: center;
-     }
-     /*estilo tarjeta*/
+label {
+    font-size: 1.5rem;
+    margin: 1rem 2.5rem;
+    text-align: left;
+}
 
-     .card {
-         padding-top: 30px;
-         width: 100%;
-         max-width: 550px;
-         position: relative;
-         color: rgb(37, 36, 36);
-         cursor: pointer;
-     }
+input,
+select {
+    color: #101016;
+    display: block;
+    margin: 0.5rem 1rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: none;
+    width: 90%;
+}
 
-     .card>div {
-         padding: 30px;
-         border-radius: 15px;
-         min-height: 315px;
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         box-shadow: 0 10px 10px 0 rgba(90, 116, 148, 0.822);
-     }
+input::placeholder {
+    color: #41419e;
+    cursor: pointer;
+    font-size: 1rem;
+}
 
-     .style-card {
-         width: 100%;
-         background: url(../assets/img/background-card/bg-img-2.jpg);
-         background-size: cover;
-     }
-     /*para mantener el espeacio de la imagen logo (contenedor vacio)*/
+.data-card {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
 
-     .style-card .logo-card {
-         text-align: right;
-         min-height: 50px;
-     }
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin: 0.5rem;
+}
 
-     .style-card .logo-card img {
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
-         max-width: 80px;
-     }
+.btn-send {
+    display: flex;
+    background: #41419e;
+    -webkit-box-shadow: 2px 2px 7px 2px #2D2C70;
+    box-shadow: 2px 2px 7px 2px #2D2C70;
+    cursor: pointer;
+    border: none;
+    justify-items: center;
+    margin: auto;
+    font-size: 1.5rem;
+    padding: 0.5rem 4rem;
+    border-radius: 1rem;
+}
 
-     .style-card .chip-card {
-         width: 100%;
-         max-width: 50px;
-         margin-bottom: 20px;
-     }
+.btn-send:hover {
+    background: rgba(15, 75, 7, 0.473);
+    transform: scale(1.2);
+    transition: 1s;
+}
 
-     .style-card .form-group .card-label {
-         font-size: 16px;
-         color: rgb(115, 131, 131);
-         margin-bottom: 5px;
-     }
+.footer {
+    margin-top: 2.5rem;
+    background: #cccce959;
+}
 
-     .style-card .card-group .number-card,
-     .style-card .card-group .name-card,
-     .style-card .card-group .expider {
-         /*color: rgb(74, 80, 80);*/
-         font-size: 22px;
-         text-transform: uppercase;
-     }
+.terms>p {
+    margin: 0.5rem;
+}
 
-     .style-card .flexbox {
-         display: flex;
-         justify-content: space-between;
-         margin-top: 20px;
-     }
-     /*btn abrir formulario*/
+.box__footer {
+    display: flex;
+    justify-content: space-between;
+}
 
-     .btn-open,
-     .txt-span {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-     }
+.icon-footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 2.5rem;
+    gap: 2rem;
+}
 
-     .txt-span {
-         font-size: 2vw;
-         color: rgb(23, 178, 206);
-         z-index: 2;
-         margin-top: -4rem;
-         text-decoration: none;
-     }
-
-     .btn-open>a>img {
-         width: 10rem;
-         height: 10rem;
-     }
-
-     .btn-open>a>img:hover {
-         box-shadow: 0.5rem 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
-     }
+.fa-facebook {
+    color: #41419e;
+}
