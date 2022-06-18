@@ -29,7 +29,7 @@
                     <label for="inputNumber">Número Tarjeta</label>
                     <input type="text" id="inputNumber" name="number" maxlength="16" autocomplete="off" pattern="[0-9]+" placeholder="XXXX XXXX XXXX XXXX" required />
                     <span role="alert" id="nameError" aria-hidden="true">
-                      Por favor ingresa el número.
+                      Por favor ingresa el número correcto.
                     </span>
                 </div>
                 <div class="data-card">
@@ -80,6 +80,9 @@
                     <div class="data-card ccv">
                         <label for="inputCcv">CVV</label>
                         <input type="text" id="inputCcv" name="inputCcv" maxlength="3" required />
+                        <span role="alert" id="nameError" aria-hidden="true">
+                          Por favor ingresa su cvv.
+                        </span>
                     </div>
                 </div>
                 <button type="submit" value="sendForm" class="btn-send" id="sendForm">

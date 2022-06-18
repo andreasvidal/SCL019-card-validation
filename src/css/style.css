@@ -180,3 +180,12 @@ hr {
     background: #41419e;
     border-radius: 50%;
 }
+
+
+/*ERROR SECTION*/
+
+#nameError {
+    display: none;
+    color: rgb(226, 14, 14);
+    font-weight: 400;
+}
