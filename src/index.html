@@ -21,15 +21,23 @@
         <h1 class="title">DONA AQUÍ🐾!</h1>
         <form id="formValidation" class="form-validation">
             <div class="bg-blur">
+                <img class="card-icon" src="./assets/img/svg/bxl-mastercard.svg" alt="icono mastercard">
+                <img class="card-icon" src="./assets/img/svg/bxl-visa.svg" alt="icono mastercard">
+                <img class="card-icon" src="./assets/img/svg/bxs-credit-card.svg" alt="icono mastercard">
+                <img class="card-icon" src="./assets/img/svg/bxl-paypal.svg" alt="icono mastercard">
                 <div class="data-card" id="dataForm">
                     <label for="inputNumber">Número Tarjeta</label>
                     <input type="text" id="inputNumber" name="number" maxlength="16" autocomplete="off" pattern="[0-9]+" placeholder="XXXX XXXX XXXX XXXX" required />
-                    <h5 id="print"></h5>
+                    <span role="alert" id="nameError" aria-hidden="true">
+                      Por favor ingresa el número.
+                    </span>
                 </div>
                 <div class="data-card">
                     <label for="inputNameUser">Nombre </label>
                     <input type="text" id="inputNameUser" name="nameUser" placeholder="Escriba su nombre" required />
-                    <h5 id="print"></h5>
+                    <span role="alert" id="nameError" aria-hidden="true">
+                      Por favor ingresa el nombre.
+                    </span>
                 </div>
                 <!--datos expiración tarjeta-->
                 <div class="flexbox">

@@ -1,6 +1,14 @@
 const d = document;
-let id = d.getElementById(id);
-let classes = d.getElementsByClassName(classes);
+const inputNumber = d.getElementById('inputNumber');
+const nameError = d.getElementById('nameError');
+const btnSend = d.getElementById('sendForm');
+const inputNameUser = d.getElementById('inputNameUser');
 
-let userName = id('usareName'),
-    cardNumber = id('numberCard')
+
+
+btnSend.addEventListener('click', (e) => {
+    e.preventDefault();
+    inputNameUser.setCustomValidity("");
+    inputNameUser.checkValidity();
+    console.log(inputNameUser.checkValidity());
+})
