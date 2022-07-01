@@ -36,8 +36,15 @@ h1 {
     font-weight: 700;
     margin-top: 1rem;
     margin-right: 5rem;
+    padding: 1rem;
     text-shadow: 2px 2px 0 #2D2C70, 4px 4px 0 #9c9c9c;
-    background-color: #00235d;
+/* From https://css.glass */
+background: rgba(0, 35, 93, 0.46);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.7px);
+-webkit-backdrop-filter: blur(5.7px);
+border: 1px solid rgba(0, 35, 93, 0.12);
 }
 
 .container,
