@@ -186,13 +186,7 @@ hr {
 
 /*ERROR SECTION*/
 
-.ccvError {
-    color: rgb(226, 14, 14);
-    font-weight: 400;
-    margin-left: 1rem;
-}
-
- #nameError, #numberError {
+ #nameError, #numberError, #ccvError {
   color: #c2260a;
   font-weight: bold;
   margin-left: 1rem;

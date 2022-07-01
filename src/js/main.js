@@ -10,13 +10,16 @@ form.addEventListener('submit', function isValid(e){
   e.preventDefault()
   let userName = d.getElementById('inputNameUser').value
   let userCardNumber = d.getElementById('inputNumber').value
+  let ccvCardNumber = d.getElementById('inputCcv').value
   console.log(userName)
-  if(userName === "" || userCardNumber === ""){
+  if(userName === "" || userCardNumber === "" || inputCcv === ""){
     userName = false;
     d.getElementById('nameError').setAttribute('id','nameError');
     d.getElementById('numberError').setAttribute('id','numberError')
+    d.getElementById('inputCcv').setAttribute('id', 'inputCcv')
     d.getElementById('nameError').innerHTML = 'Ingrese su nombre'
-    d.getElementById('numberError').innerHTML = 'Ingrese su numero'
+    d.getElementById('numberError').innerHTML = 'Ingrese su numero de tarjeta'
+    d.getElementById('ccvError').innerHTML = 'Ingrese su ccv'
   }else if (userName !== ""){
     d.getElementById('nameError').removeAttribute('id')
   }
