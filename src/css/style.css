@@ -8,7 +8,7 @@
 body,
 html {
     font-family: 'Kdam Thmor Pro', sans-serif;
-    background-image: url(../assets/img/background.jpg);
+    background-image: url(../assets/img/fondopatas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -19,10 +19,11 @@ html {
     --color-border: rgb(15, 75, 7);
     --background-color: #cccce986;
     --btn-color: #41419e;
+    --color-p: #20202c;
 }
 
 p {
-    color: #20202c;
+    color: var(--color-p);
     font-weight: 400;
 }
 
@@ -69,6 +70,7 @@ select {
     border-radius: 1rem;
     border: none;
     width: 90%;
+    outline: none;
 }
 
 input::placeholder {
@@ -188,4 +190,11 @@ hr {
     display: none;
     color: rgb(226, 14, 14);
     font-weight: 400;
+    margin-left: 1rem;
 }
+
+/*erro*/
+ #inputNameUser {
+  content: "";
+  outline: 0.2rem solid #c2260a;
+ }

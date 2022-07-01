@@ -1,12 +1,16 @@
-const d = document;
-const inputNumber = d.getElementById('inputNumber');
-const nameError = d.getElementById('nameError');
-const btnSend = d.getElementById('sendForm');
-const inputNameUser = d.getElementById('inputNameUser');
+const validateForm = () => {
+
+  const d = document
+  //id form
+const form = d.getElementById('formValidation')
+//id input number
+const numberCard = d.getElementById('inputNumber')
+
+}
 
 
 
-btnSend.addEventListener('click', (e) => {
+/*btnSend.addEventListener('click', (e) => {
     e.preventDefault();
     //API de validación de restricciones HTML5
     inputNameUser.setCustomValidity("");
@@ -19,6 +23,7 @@ btnSend.addEventListener('click', (e) => {
     } else {
         nameError.style.display = 'block'
             //cambia el mensade el boton
-        btnSend.innerHTML = 'Send'
+        btnSend.innerHTML = 'Send ok'
     }
-})
+})*/
+

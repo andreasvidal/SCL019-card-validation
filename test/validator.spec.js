@@ -1,5 +1,5 @@
 // importamos el objeto `validator`, que contiene las funciones `isValid` y `maskify`
-import validator from '../src/js/validator.js';
+import validator from './src/carValidation.js';
 
 describe('validator', () => {
     it('debería ser un objeto', () => {
