@@ -192,13 +192,13 @@ hr {
     margin-left: 1rem;
 }
 
-/*erro*/
- #inputNameUser>span, #nameError {
+ #nameError, #numberError {
   color: #c2260a;
+  font-weight: bold;
+  margin-left: 1rem;
  }
 
- /*ok*/
-
- #nameOk>span{
+ #nameOk{
   color: green;
  }
+

@@ -9,14 +9,16 @@ let cardNumber = d.getElementById('inputNumber')
 form.addEventListener('submit', function isValid(e){
   e.preventDefault()
   let userName = d.getElementById('inputNameUser').value
+  let userCardNumber = d.getElementById('inputNumber').value
   console.log(userName)
-  if(userName === ""){
+  if(userName === "" || userCardNumber === ""){
     userName = false;
-    d.getElementById('nameError').setAttribute('id','nameError')
+    d.getElementById('nameError').setAttribute('id','nameError');
+    d.getElementById('numberError').setAttribute('id','numberError')
     d.getElementById('nameError').innerHTML = 'Ingrese su nombre'
-  }else if (userName > 3){
-    d.getElementById('nameError').setAttribute('id','nameOk')
-    d.getElementById('nameError').innerHTML = 'correcto'
+    d.getElementById('numberError').innerHTML = 'Ingrese su numero'
+  }else if (userName !== ""){
+    d.getElementById('nameError').removeAttribute('id')
   }
 })
 
