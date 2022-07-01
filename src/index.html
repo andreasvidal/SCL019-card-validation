@@ -19,7 +19,7 @@
 <body>
     <div class="container">
         <h1 class="title">DONA AQUÍ🐾!</h1>
-        <form id="formValidation" class="form-validation" onsubmit= "return validateForm()">
+        <form id="formValidation" class="form-validation">
             <div class="bg-blur">
                 <img class="card-icon" src="./assets/img/svg/bxl-mastercard.svg" alt="icono mastercard">
                 <img class="card-icon" src="./assets/img/svg/bxl-visa.svg" alt="icono mastercard">
@@ -27,16 +27,15 @@
                 <img class="card-icon" src="./assets/img/svg/bxl-paypal.svg" alt="icono mastercard">
                 <div class="data-card" id="dataForm">
                     <label for="inputNumber">Número Tarjeta</label>
-                    <input type="text" id="inputNumber" name="number" maxlength="16" autocomplete="off" pattern="[0-9]+" placeholder="XXXX XXXX XXXX XXXX" required />
-                    <span role="alert" id="nameError" aria-hidden="true">
-                      Por favor ingresa el número correcto.
-                    </span>
+                    <input type="text" id="inputNumber" name="number" maxlength="16" autocomplete="off" pattern="[0-9]+" placeholder="XXXX XXXX XXXX XXXX"/>
+                    <span role="alert" id="numberError" aria-hidden="true"></span>
                 </div>
                 <div class="data-card">
                     <label for="inputNameUser">Nombre </label>
-                    <input type="text" id="inputNameUser" name="nameUser" placeholder="Escriba su nombre" required />
+                    <input type="text" id="inputNameUser" name="nameUser" placeholder="Escriba su nombre" />
                     <span role="alert" id="nameError" aria-hidden="true">
-                      Por favor ingresa el nombre.
+                    </span>
+                    <span role="alert" id="nameOk" aria-hidden="true">
                     </span>
                 </div>
                 <!--datos expiración tarjeta-->
@@ -79,9 +78,8 @@
                     </div>
                     <div class="data-card ccv">
                         <label for="inputCcv">CVV</label>
-                        <input type="text" id="inputCcv" name="inputCcv" maxlength="3" required />
-                        <span role="alert" id="nameError" aria-hidden="true">
-                          Por favor ingresa su cvv.
+                        <input type="text" id="inputCcv" name="inputCcv" maxlength="3"/>
+                        <span role="alert" id="ccvError" class="ccvError" aria-hidden="true">
                         </span>
                     </div>
                 </div>

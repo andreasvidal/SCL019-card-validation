@@ -186,15 +186,19 @@ hr {
 
 /*ERROR SECTION*/
 
-#nameError {
-    display: none;
+.ccvError {
     color: rgb(226, 14, 14);
     font-weight: 400;
     margin-left: 1rem;
 }
 
 /*erro*/
- #inputNameUser {
-  content: "";
-  outline: 0.2rem solid #c2260a;
+ #inputNameUser>span, #nameError {
+  color: #c2260a;
+ }
+
+ /*ok*/
+
+ #nameOk>span{
+  color: green;
  }

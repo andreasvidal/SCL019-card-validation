@@ -1,12 +1,25 @@
-const validateForm = () => {
+//import {validator} from './carValidation.js'
 
   const d = document
   //id form
-const form = d.getElementById('formValidation')
+let form = d.getElementById('formValidation')
 //id input number
-const numberCard = d.getElementById('inputNumber')
+let cardNumber = d.getElementById('inputNumber')
 
-}
+form.addEventListener('submit', function isValid(e){
+  e.preventDefault()
+  let userName = d.getElementById('inputNameUser').value
+  console.log(userName)
+  if(userName === ""){
+    userName = false;
+    d.getElementById('nameError').setAttribute('id','nameError')
+    d.getElementById('nameError').innerHTML = 'Ingrese su nombre'
+  }else if (userName > 3){
+    d.getElementById('nameError').setAttribute('id','nameOk')
+    d.getElementById('nameError').innerHTML = 'correcto'
+  }
+})
+
 
 
 
