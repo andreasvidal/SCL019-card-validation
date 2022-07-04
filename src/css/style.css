@@ -23,15 +23,16 @@ html {
     --btn-send-bg: #ff5f95;
     --btn-send-hover: #ffaa01;
     --footer-bg-color: #37d4ff79;
+    --color-h1: #b06ae4
 }
 
 p {
-    color: var(--font-color);
+    color: var(--color-h1);
     font-weight: 400;
 }
 
 h1 {
-  color: #b06ae4;
+  color: var(--color-h1);
     font-size: 3.5rem;
     font-weight: 700;
     margin-top: 1rem;
@@ -86,6 +87,10 @@ select {
     outline: none;
 }
 
+#inputCcv{
+  margin-top: 1rem;
+}
+
 input::placeholder {
     color: var(--font-color);
     cursor: pointer;
@@ -123,17 +128,24 @@ input::placeholder {
 
 .btn-send:hover {
     background: var(--btn-send-hover) ;
-    transform: scale(1.2);
-    transition: 1s;
+    transform: scale(1.1);
+    transition:ease-in-out .5s;
 }
 
 .footer {
     margin-top: 2.5rem;
-    background: var(--footer-bg-color);
+    /* From https://css.glass */
+background: rgba(0, 36, 93, 0.589);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.7px);
+-webkit-backdrop-filter: blur(5.7px);
+border: 1px solid rgba(0, 35, 93, 0.12);
 }
 
 .terms>p {
     margin: 0.5rem;
+    color: var(--color-h1);
 }
 
 .box__footer {
@@ -141,6 +153,7 @@ input::placeholder {
     justify-content: space-between;
     align-items: center;
     margin-left: 1rem;
+    color: var(--color-h1);
 }
 
 .icon-footer {
@@ -155,7 +168,7 @@ input::placeholder {
 .fa-facebook-square,
 .fa-twitter-square,
 .fa-linkedin {
-    color: var(--background-color);
+    color: var(--color-h1);
 }
 
 .fa-facebook-square:hover {

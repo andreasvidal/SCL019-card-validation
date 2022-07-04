@@ -4,15 +4,16 @@
   //id form
 let form = d.getElementById('formValidation')
 //id input number
-let cardNumber = d.getElementById('inputNumber')
+let userCardNumber = d.getElementById('inputNumber').value
 
 form.addEventListener('submit', function isValid(e){
   e.preventDefault()
+  const onlyNum = /[^0-9]/g
   let userName = d.getElementById('inputNameUser').value
   let userCardNumber = d.getElementById('inputNumber').value
   let ccvCardNumber = d.getElementById('inputCcv').value
   console.log(userName)
-  if(userName === "" || userCardNumber === "" || inputCcv === ""){
+  if(userName === "" || userCardNumber === "" || ccvCardNumber === ""){
     userName = false;
     d.getElementById('nameError').setAttribute('id','nameError');
     d.getElementById('numberError').setAttribute('id','numberError')
@@ -24,9 +25,6 @@ form.addEventListener('submit', function isValid(e){
     d.getElementById('nameError').removeAttribute('id')
   }
 })
-
-
-
 
 /*btnSend.addEventListener('click', (e) => {
     e.preventDefault();
