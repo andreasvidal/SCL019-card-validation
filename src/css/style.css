@@ -213,7 +213,7 @@ hr {
 
 /*ERROR SECTION*/
 
- #nameError, #numberError, #ccvError {
+ #nameError, #numberError, #ccvError, #numberNull {
   color: #c2260a;
   font-weight: bold;
   margin-left: 1rem;
@@ -223,3 +223,12 @@ hr {
   color: green;
  }
 
+ .borderOk{
+  border: 0.2rem solid  #008000;
+  outline: #008000;
+ }
+
+ #numberOk, #ccvOk, #nameOk{
+  color: #008000;
+  font-weight: bold;
+ }

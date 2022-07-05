@@ -1,45 +1,49 @@
 //import {validator} from './carValidation.js'
+const d = document;
+let form = document.getElementById("#formValidation");
+let btnSend = document.getElementById("sendForm");
+let inputNumber = d.querySelector("#inputNumber").value;
+let inputNameUser = d.querySelector("#inputNameUser").value;
+let inputCcv = d.querySelector("#inputCcv").value;
 
-  const d = document
-  //id form
-let form = d.getElementById('formValidation')
-//id input number
-let userCardNumber = d.getElementById('inputNumber').value
-
-form.addEventListener('submit', function isValid(e){
+btnSend.addEventListener('click', function(e){
   e.preventDefault()
-  const onlyNum = /[^0-9]/g
-  let userName = d.getElementById('inputNameUser').value
-  let userCardNumber = d.getElementById('inputNumber').value
-  let ccvCardNumber = d.getElementById('inputCcv').value
-  console.log(userName)
-  if(userName === "" || userCardNumber === "" || ccvCardNumber === ""){
-    userName = false;
-    d.getElementById('nameError').setAttribute('id','nameError');
-    d.getElementById('numberError').setAttribute('id','numberError')
-    d.getElementById('inputCcv').setAttribute('id', 'inputCcv')
-    d.getElementById('nameError').innerHTML = 'Ingrese su nombre'
-    d.getElementById('numberError').innerHTML = 'Ingrese su numero de tarjeta'
-    d.getElementById('ccvError').innerHTML = 'Ingrese su ccv'
-  }else if (userName !== ""){
-    d.getElementById('nameError').removeAttribute('id')
+  if (inputNumber === "") {
+    d.querySelector("#numberError").textContent = 'Debes ingresar tu numero de tarjeta';
   }
-})
+  if(inputNameUser === ""){
+    d.querySelector("#nameError").textContent = 'Debe ingresar tu nombre';
+  }
+  if(inputCcv === ""){
+    d.querySelector("#ccvError").textContent = 'Ingresa tu numero de ccv';
+  }
+}) ;
 
-/*btnSend.addEventListener('click', (e) => {
-    e.preventDefault();
-    //API de validación de restricciones HTML5
-    inputNameUser.setCustomValidity("");
-    inputNameUser.checkValidity();
-    console.log(inputNameUser.checkValidity());
-    let errorText = nameError.style.display
-    if (errorText === 'block') {
-        nameError.style.display = 'none'
-        console.log(errorText)
-    } else {
-        nameError.style.display = 'block'
-            //cambia el mensade el boton
-        btnSend.innerHTML = 'Send ok'
-    }
-})*/
+btnSend.addEventListener('click', function(e){
+  e.preventDefault
+  if(inputNumber > 0){
+     d.querySelector("#numberOk").textContent = 'Ok!';
+  }
+  if(inputCcv > 0){
+    d.querySelector("#ccvOk").textContent = 'Ok!';
+  }
+  if(!inputNameUser === ""){
+    d.querySelector("#nameOk").textContent = 'Ok!';
+  }
+}
+)
 
+
+const inputValidValues = () => {
+  const onlypLet = /[^a-zA-ZÑñáéíóúÁÉÍÓÚ\s]*$/g;
+  if(!inputNameUser === onlypLet ){
+    d.querySelector("#numberNull").innerHTML = inputNameUser;
+     inputNameUser.value = inputNameUser.value.replace(onlyNum, '');
+  }
+  const onlyNum = /[^0-9]/g;
+  if(inputNumber || inputCcv === onlyNum){
+     inputCcv.value = inputCcv.value.replace(onlyNum, '');
+  }
+  return inputValidValues
+}
+btnSend.addEventListener('submit', inputValidValues())
