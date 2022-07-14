@@ -27,14 +27,16 @@
                 <img class="card-icon" src="./assets/img/svg/bxl-paypal.svg" alt="icono mastercard">
                 <div class="data-card" id="dataForm">
                     <label for="inputNumber">Número Tarjeta</label>
-                    <input type="text" id="inputNumber" class="borderOk" name="number" maxlength="16" autocomplete="off" placeholder="XXXX XXXX XXXX XXXX"/>
+                    <input type="text" id="inputNumber"  name="number" maxlength="16" autocomplete="off" placeholder="XXXX XXXX XXXX XXXX"/>
+                    <input type="text" class="borderOk" name="number" maxlength="16" autocomplete="off" placeholder="XXXX XXXX XXXX XXXX"/>
                     <span role="alert" id="numberError" aria-hidden="true"></span>
                     <span role="alert" id="numberNull" aria-hidden="true"></span>
                     <span role="alert" id="numberOk" aria-hidden="true"></span>
                 </div>
                 <div class="data-card">
                     <label for="inputNameUser">Nombre </label>
-                    <input type="text" id="inputNameUser" class="borderOk" name="nameUser" placeholder="Escriba su nombre" />
+                    <input type="text" id="inputNameUser"  name="nameUser" placeholder="Escriba su nombre" />
+                    <input type="text" class="borderOk" name="nameUser" placeholder="Escriba su nombre" />
                     <span role="alert" id="nameError" aria-hidden="true"></span>
                     <span role="alert" id="nameOk" aria-hidden="true"></span>
                 </div>
@@ -78,6 +80,7 @@
                     </div>
                     <div class="data-card ccv">
                         <label for="inputCcv">CVV</label>
+                        <input type="text" id="inputCcv"  name="inputCcv" maxlength="3"/>
                         <input type="text" id="inputCcv"  class="borderOk" name="inputCcv" maxlength="3"/>
                         <span role="alert" id="ccvError" class="ccvError" aria-hidden="true"></span>
                         <span role="alert" id="ccvOk" class="ccvError" aria-hidden="true"></span>

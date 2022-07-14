@@ -1,234 +1,243 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 body,
 html {
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    background-image: url(../assets/img/fondopatas.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(158, 148, 233, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
 :root {
-    --font-color: #141f2e;
-    --color-border: rgb(15, 75, 7);
-    --background-color: #00235d;
-    --btn-color: #41419e;
-    --color-p: #cccce9;
-    --btn-send-bg: #ff5f95;
-    --btn-send-hover: #ffaa01;
-    --footer-bg-color: #37d4ff79;
-    --color-h1: #b06ae4
+  --font-color: #141f2e;
+  --color-border: rgb(15, 75, 7);
+  --background-color: #af6ae46c;
+  --btn-color: #41419e;
+  --color-p: #cccce9;
+  --btn-send-bg: #ff5f95;
+  --btn-send-hover: #ffaa01;
+  --footer-bg-color: #37d4ff79;
+  --color-h1: #b06ae4;
 }
 
 p {
-    color: var(--color-h1);
-    font-weight: 400;
+  color: var(--font-color);
+  font-weight: 400;
 }
 
 h1 {
   color: var(--color-h1);
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-top: 1rem;
-    margin-right: 5rem;
-    padding: 1rem;
-    text-shadow: 2px 2px 0 #2D2C70, 4px 4px 0 #9c9c9c;
-/* From https://css.glass */
-background: rgba(0, 35, 93, 0.46);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.7px);
--webkit-backdrop-filter: blur(5.7px);
-border: 1px solid rgba(0, 35, 93, 0.12);
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-right: 5rem;
+  padding: 1rem;
+  text-shadow: 2px 2px 0 #2d2c70, 4px 4px 0 #9c9c9c;
+  /* From https://css.glass */
+  background: rgba(0, 35, 93, 0.46);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(0, 35, 93, 0.12);
 }
 
 .container,
 .form-validation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .form-validation {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-top: 5rem;
-    padding: 2.5rem 1rem;
-    border-radius: 1rem;
-    background: var(--background-color);
-    -webkit-box-shadow: 5px 5px 15px 5px #2D2C70;
-    box-shadow: 5px 5px 15px 5px #2D2C70;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 5rem;
+  padding: 2.5rem 1rem;
+  border-radius: 1rem;
+  background: var(--background-color);
+  -webkit-box-shadow: 5px 5px 15px 5px #2d2c70;
+  box-shadow: 5px 5px 15px 5px #2d2c70;
 }
 
 label {
-  color: #9c9c9c;
-    font-size: 1.5rem;
-    margin: 1rem 2.5rem;
-    text-align: left;
+  color: var(--font-color);
+  font-size: 1.5rem;
+  margin: 1rem 2.5rem;
+  text-align: left;
 }
 
 input,
 select {
-    color: var(--font-color);
-    display: block;
-    margin: 0.5rem 1rem;
-    padding: 0.8rem;
-    border-radius: 1rem;
-    border: none;
-    width: 90%;
-    outline: none;
+  color: var(--font-color);
+  display: block;
+  margin: 0.5rem 1rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: none;
+  width: 90%;
+  outline: none;
 }
 
-#inputCcv{
+#inputCcv {
   margin-top: 1rem;
 }
 
 input::placeholder {
-    color: var(--font-color);
-    cursor: pointer;
-    font-size: 1rem;
+  color: var(--font-color);
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .data-card {
-    margin-bottom: 2rem;
-    margin-left: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
 }
 
 .flexbox {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  margin: 0.5rem;
 }
 
 .btn-send {
-    display: flex;
-    background: var(--btn-send-bg);
-    -webkit-box-shadow: 2px 2px 7px 2px #2D2C70;
-    box-shadow: 2px 2px 7px 2px #2D2C70;
-    color: var(--background-color);
-    cursor: pointer;
-    border: none;
-    justify-items: center;
-    margin: auto;
-    font-size: 1.5rem;
-    padding: 0.5rem 4rem;
-    border-radius: 1rem;
+  display: flex;
+  background: var(--btn-send-bg);
+  -webkit-box-shadow: 2px 2px 7px 2px #2d2c70;
+  box-shadow: 2px 2px 7px 2px #2d2c70;
+  color: var(--font-color);
+  cursor: pointer;
+  border: none;
+  justify-items: center;
+  margin: auto;
+  font-size: 1.5rem;
+  padding: 0.5rem 4rem;
+  border-radius: 1rem;
 }
 
 .btn-send:hover {
-    background: var(--btn-send-hover) ;
-    transform: scale(1.1);
-    transition:ease-in-out .5s;
+  background: var(--btn-send-hover);
+  transform: scale(1.1);
+  transition: ease-in-out 0.5s;
 }
 
 .footer {
-    margin-top: 2.5rem;
-    /* From https://css.glass */
-background: rgba(0, 36, 93, 0.589);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.7px);
--webkit-backdrop-filter: blur(5.7px);
-border: 1px solid rgba(0, 35, 93, 0.12);
+  margin-top: 2.5rem;
+  /* From https://css.glass */
+  background: var(--background-color);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(0, 35, 93, 0.12);
 }
 
-.terms>p {
-    margin: 0.5rem;
-    color: var(--color-h1);
+.terms > p {
+  margin: 0.5rem;
+  color: var(--font-color);
 }
 
 .box__footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 1rem;
-    color: var(--color-h1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  color: var(--font-color);
 }
 
 .icon-footer {
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
-    margin: 0.5rem;
-    font-size: 2.5rem;
-    gap: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  margin: 0.5rem;
+  font-size: 2.5rem;
+  gap: 2rem;
 }
 
 .fa-facebook-square,
 .fa-twitter-square,
 .fa-linkedin {
-    color: var(--color-h1);
+  color: var(--font-color);
 }
 
 .fa-facebook-square:hover {
-    color: #0c3ab8;
-    transform: scale(1.3);
-    transition: 0.5s;
+  color: #0c3ab8;
+  transform: scale(1.3);
+  transition: 0.5s;
 }
 
 .fa-linkedin:hover {
-    color: #0a66c2;
-    transform: scale(1.3);
-    transition: 0.5s;
+  color: #0a66c2;
+  transform: scale(1.3);
+  transition: 0.5s;
 }
 
 .fa-twitter-square:hover {
-    color: #1d9bf0;
-    transform: scale(1.3);
-    transition: 0.5s;
+  color: #1d9bf0;
+  transform: scale(1.3);
+  transition: 0.5s;
 }
 
 hr {
-    border: 0.1rem solid #2d2c7094;
+  border: 0.1rem solid #2d2c7094;
 }
 
 .footer-txt {
-    text-align: center;
-    margin-top: 0.5rem;
-    padding-top: 0.5rem;
-    font-weight: bold;
+  text-align: center;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  font-weight: bold;
 }
 
 .card-icon {
-    padding: 0.5rem;
-    margin: 0.7rem 1rem;
-    display: inline;
-    font-size: 1rem;
-    height: 5rem;
-    background: var(--btn-send-bg);
-    border-radius: 50%;
+  padding: 0.5rem;
+  margin: 0.7rem 1rem;
+  display: inline;
+  font-size: 1rem;
+  height: 5rem;
+  background: var(--btn-send-bg);
+  border-radius: 50%;
 }
-
 
 /*ERROR SECTION*/
 
- #nameError, #numberError, #ccvError, #numberNull {
+#nameError,
+#numberError,
+#ccvError,
+#numberNull {
   color: #c2260a;
   font-weight: bold;
   margin-left: 1rem;
- }
+}
 
- #nameOk{
+#nameOk {
   color: green;
- }
+}
 
- .borderOk{
-  border: 0.2rem solid  #008000;
+.borderOk {
+  display: none;
+  border: 0.2rem solid #008000;
   outline: #008000;
- }
+}
 
- #numberOk, #ccvOk, #nameOk{
+#numberOk,
+#ccvOk,
+#nameOk {
   color: #008000;
   font-weight: bold;
- }
+}
